@@ -7,6 +7,7 @@ class ShortUrl(models.Model):
     '''
     long_url = models.URLField(max_length=2000)
     short_url = models.CharField(max_length=2000, unique=True)
+    creator = models.CharField(max_length=40)
 
     def __str__(self):
         return self.short_url
