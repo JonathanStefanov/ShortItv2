@@ -110,7 +110,7 @@ class Shortener extends Component{
 
     };
 
-     componentWillMount() {
+     componentDidMount() {
          // Already getting a shortUrl so there is no bug
          this.getShortUrl();
          this.getRecentUrls();
