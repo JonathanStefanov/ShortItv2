@@ -14,7 +14,7 @@ class Home extends Component {
         return Object.keys(obj).length === 0;
     }*/
 
-    componentWillMount() {
+    componentDidMount() {
         const cookies = new Cookies();
         const testToken = cookies.get('token');
 
